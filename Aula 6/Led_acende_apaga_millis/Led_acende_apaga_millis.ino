@@ -3,7 +3,7 @@ bool estado = 0;     //Define a variável estadoled como 0 e prapara para aceita
 unsigned long tempo = 0;     //Define a variável tempo como 0 e prepara para aceitar apenas valores positivos
 
 void setup() {
-  digitalWrite(led, OUTPUT);     //Define led como uma saída
+  pinMode(led, OUTPUT);     //Define led como uma saída
   Serial.begin(115200);
 }
 
