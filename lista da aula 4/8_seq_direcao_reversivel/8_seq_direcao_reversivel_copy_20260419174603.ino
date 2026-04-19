@@ -1,0 +1,71 @@
+const int led1 = 8;
+const int led2 = 9;
+const int led3 = 10;
+const int led4 = 11;
+
+const int botao1 = 2;
+const int botao2 = 3;
+
+unsigned long tempoAnterior = 0;
+const int intervalo = 400;
+
+int indice = 0;
+int direcao = 1;
+bool rodando = true;
+
+bool ultimoBotao1 = HIGH;
+bool ultimoBotao2 = HIGH;
+
+void setup() {
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
+
+  pinMode(botao1, INPUT_PULLUP);
+  pinMode(botao2, INPUT_PULLUP);
+}
+
+void loop() {
+  bool leitura1 = digitalRead(botao1);
+  bool leitura2 = digitalRead(botao2);
+
+  // troca direção
+  if (ultimoBotao1 == HIGH && leitura1 == LOW) {
+    direcao = direcao * -1;
+  }
+
+  // pausa / inicia
+  if (ultimoBotao2 == HIGH && leitura2 == LOW) {
+    rodando = !rodando;
+  }
+
+  ultimoBotao1 = leitura1;
+  ultimoBotao2 = leitura2;
+
+  if (rodando) {
+    unsigned long tempoAtual = millis();
+
+    if (tempoAtual - tempoAnterior >= intervalo) {
+      tempoAnterior = tempoAtual;
+
+      // apaga todos
+      digitalWrite(led1, LOW);
+      digitalWrite(led2, LOW);
+      digitalWrite(led3, LOW);
+      digitalWrite(led4, LOW);
+
+      // liga o LED atual
+      if (indice == 0) digitalWrite(led1, HIGH);
+      if (indice == 1) digitalWrite(led2, HIGH);
+      if (indice == 2) digitalWrite(led3, HIGH);
+      if (indice == 3) digitalWrite(led4, HIGH);
+
+      // muda índice
+      indice += direcao;
+
+      if (indice > 3) indice = 0;
+      if (indice < 0) indice = 3;
+    }
+  }
+}
