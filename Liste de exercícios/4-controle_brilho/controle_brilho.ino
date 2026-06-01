@@ -1,18 +1,3 @@
-/* ************************************************************************
-
-Colégio SATC
-Curso Técnico em Mecatrônica
-Disciplina: Sistemas Embarcados
-Turma: 3191
-Professor: Marcos Antonio Jeremias Coelho
-
-Programa: Controle de Brilho Cíclico
-
-Autor: Tiago Fortunato Rosset
-Data: 10/0/2026
-Versão: 1.0
-
-************************************************************************ */
 
 const int botao = 2;
 const int led = 9;
