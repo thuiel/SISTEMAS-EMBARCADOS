@@ -1,18 +1,3 @@
-/* ************************************************************************
-
-Colégio SATC
-Curso Técnico em Mecatrônica
-Disciplina: Sistemas Embarcados
-Turma: 3191
-Professor: Marcos Antonio Jeremias Coelho
-
-Programa: Máquina de Solda Ponto Automatizada
-
-Autor: Tiago Fortunato Rosset
-Data: 18/04/2026
-Versão: 1.0
-
-************************************************************************ */
 
 const int botao = 2;
 const int sensor = A0;
