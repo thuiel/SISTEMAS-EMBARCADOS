@@ -1,18 +1,3 @@
-/* ************************************************************************
-
-Colégio SATC
-Curso Técnico em Mecatrônica
-Disciplina: Sistemas Embarcados
-Turma: 3191
-Professor: Marcos Antonio Jeremias Coelho
-
-Programa: Intertravamento de Segurança
-
-Autor: Tiago Fortunato Rosset
-Data: 10/0/2026
-Versão: 1.0
-
-************************************************************************ */
 
 const int botao1 = 2;      //botao1 assume o valor da porta 2
 const int botao2 = 3;      //botao2 assume o valor da porta 3
