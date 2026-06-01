@@ -1,18 +1,3 @@
-/* ************************************************************************
-
-Colégio SATC
-Curso Técnico em Mecatrônica
-Disciplina: Sistemas Embarcados
-Turma: 3191
-Professor: Marcos Antonio Jeremias Coelho
-
-Programa: Controle de Nível e Transbordo de Silo
-
-Autor: Tiago Fortunato Rosset
-Data: 12/04/2026
-Versão: 1.0
-
-************************************************************************ */
 
 const int sensor = A0;
 const int led1 = 8;
