@@ -1,19 +1,3 @@
-/* ************************************************************************
-
-Colégio SATC
-Curso Técnico em Mecatrônica
-Disciplina: Sistemas Embarcados
-Turma: 3191
-Professor: Marcos Antonio Jeremias Coelho
-
-Programa: Esteira de Triagem de Lotes
-
-Autor: Tiago Fortunato Rosset
-Data: 12/04/2026
-Versão: 1.0
-
-************************************************************************ */
-
 const int botao1 = 2;
 const int botao2 = 3;
 const int led = 8;
