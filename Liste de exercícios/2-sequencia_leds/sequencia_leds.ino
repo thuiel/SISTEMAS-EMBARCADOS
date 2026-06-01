@@ -1,18 +1,3 @@
-/* ************************************************************************
-
-Colégio SATC
-Curso Técnico em Mecatrônica
-Disciplina: Sistemas Embarcados
-Turma: 3191
-Professor: Marcos Antonio Jeremias Coelho
-
-Programa: Sequência simples de LEDs
-
-Autor: Tiago Fortunato Rosset
-Data: 10/0/2026
-Versão: 1.0
-
-************************************************************************ */
 
 const int led1 = 8;
 const int led2 = 9;
